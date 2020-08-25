@@ -38,6 +38,6 @@ steps:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(build.artifactStagingDirectory)/WebApp.zip'
     replaceExistingArchive: true
     verbose: true
