@@ -28,16 +28,11 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(build.artifactStagingDirectory)/WebApp.zip'
+    archiveFile: '$(build.artifactStagingDirectory)\WebApp.zip'
     replaceExistingArchive: true
     verbose: true
